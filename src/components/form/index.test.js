@@ -39,6 +39,7 @@ const result = { weather: [{ main: "Clouds", description: "few clouds" }] };
 // });
 
 jest.mock("axios");
+//Se for optar por esta abordagem pode ser deixar o jest.mock no arquivo de configuracao do jest (setupTests)
 describe("Form 2", () => {
   beforeEach(() => jest.clearAllMocks()); //Sempre lembrar de limpar os mocks antes de cada teste
   it("Should be call setWeather with api result parameters", async () => {
