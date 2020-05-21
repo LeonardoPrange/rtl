@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom";
 import Button from ".";
 
 //Gosto de instanciar o componente sobre teste separado, caso precise adicionar outra propriedade ou provider

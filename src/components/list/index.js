@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import Form from "../form";
 
 export default function List() {
+  const [weather, setWeather] = useState([]);
   return (
-    <ul>
-      <li>C#</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>PHP</li>
-      <li></li>
-    </ul>
+    <div>
+      <Form setWeather={setWeather} />
+      <ul>
+        {weather.map((w) => (
+          <>
+            <li>{w.main}</li>
+            <li>{w.description}</li>
+          </>
+        ))}
+      </ul>
+    </div>
   );
 }

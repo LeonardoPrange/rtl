@@ -1,11 +1,13 @@
+body {
+  background-color: #282c34;
+}
 .App {
   text-align: center;
-  background-color: #282c34;
   color: white;
 }
 
 .App-header {
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,4 +18,9 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Examples {
+  display: flex;
+  justify-content: space-around;
 }
