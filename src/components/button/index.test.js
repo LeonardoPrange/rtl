@@ -49,6 +49,9 @@ describe("Button", () => {
 
   it('Shoud not show response text when no click in "Eh par" button', () => {
     render(<MyComponent />);
+    const clickButton = screen.getByTestId("click-button");
+    fireEvent.click(clickButton);
+
     const responseText = screen.queryByTestId("response-text");
     expect(responseText).not.toBeInTheDocument();
   });
